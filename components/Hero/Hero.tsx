@@ -20,8 +20,22 @@ export interface Props {
   idVimeo: string;
 }
 
+const BASE_PROPS = {
+  flag: "Masterclass",
+  title: "<p>High-Performance<br>Web Dev with<span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\"> <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">deco.cx</span></span></p>",
+  video: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/0962d927-5796-4b24-bab8-6588dd2585bb",
+  button: {
+    href: "#",
+    label: "Enroll Now ",
+    details: "(Starts March 15th)"
+  },
+  idVimeo: "914914239",
+  subtitle: "<p>From Beginner to Expert: Master deco.cx for&nbsp;Elite Web and Storefront Development</p>",
+  afterButtonText: "Check the pre-requisites"
+}
+
 export default function Hero({ props }: { props: Props }) {
-  const { flag, title, subtitle, button, afterButtonText, idVimeo } = props;
+  const { flag, title, subtitle, button, afterButtonText, idVimeo } = { ...BASE_PROPS, ...props };
 
   return (
     <div class="w-full h-full flex flex-col  lg:flex-row justify-center lg:justify-between items-center gap-11 lg:px-8 lg:gap-4 pb-16 pt-20 container px-3">
