@@ -16,7 +16,34 @@ export interface Props {
   }[];
 }
 
-export default function Achievements({ title, subTitle, topics }: Props) {
+const BASE_PROPS = {
+  title: '<p>This masterclass is meticulously designed to <span style="color: rgb(45, 194, 107);" data-mce-style="color: rgb(45, 194, 107);"> <span style="color: rgb(2, 246, 124);" data-mce-style="color: rgb(2, 246, 124);">bridge this gap.</span></span></p>',
+  subTitle: "<p>By the end of the course...</p>",
+  topics: [
+    {
+      text: "You'll launch top-tier websites and headless storefronts with unmatched speed.",
+    },
+    {
+      text: "You'll create scalable, highly personalized digital experiences.",
+    },
+    {
+      text: "You'll enhance team collaboration, simplifying site updates for non-dev roles.",
+    },
+    {
+      text: "You'll confidently manage live sites with deco.cx's robust monitoring suite.",
+    },
+    {
+      text: "You'll emerge as a forward-thinking developer, equipped for the web's evolution.",
+    },
+    {
+      text: "You'll expertly tackle and debug real-world project challenges.",
+    }
+  ]
+};
+
+export default function Achievements({ props }: { props: Props }) {
+  const { title, subTitle, topics } = { ...BASE_PROPS, ...props };
+
   return (
     <div class="container px-3 pt-24">
       <BigText title={title} />
