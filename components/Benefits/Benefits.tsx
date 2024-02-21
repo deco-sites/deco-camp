@@ -49,6 +49,7 @@ export default function Benefits({ props }: { props: Props }) {
           image={item.icon}
           title={item.title}
           subTitle={item.subTitle}
+          position={index}
         />
       ))}
     </div>

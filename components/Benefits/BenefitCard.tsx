@@ -4,15 +4,16 @@ export interface Props {
   image: ImageWidget;
   title: string;
   subTitle: string;
+  position: number;
 }
 
 export default function BenefitCard(
-  { image, title, subTitle }: Props,
+  { image, title, subTitle, position }: Props,
 ) {
   return (
     <>
       <div
-        class={`py-6 lg:pl-6 lg:py-0`}
+        class={`py-6 lg:py-0 ${position == 0 ? 'pl-0' : 'lg:pl-6 2xl:pl-14'}`}
       >
         <img class="mb-4" src={image} width={32} height={32} />
 
