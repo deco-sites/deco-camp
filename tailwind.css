@@ -26,6 +26,22 @@
     overflow: hidden;
     height: 100vh;
   }
+
+  details>summary {
+    list-style: none;
+  }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details[open] summary svg {
+    transform: rotate(180deg);
+  }
+
+  details[open] summary.notShow svg {
+    transform: rotate(0);
+  }
 }
 
 @layer components {
