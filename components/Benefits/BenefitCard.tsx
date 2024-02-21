@@ -13,7 +13,7 @@ export default function BenefitCard(
   return (
     <>
       <div
-        class={`py-6 lg:py-0 ${position == 0 ? 'pl-0' : 'lg:pl-6 2xl:pl-14'}`}
+        class={`py-6 lg:py-0 ${position == 0 ? "pl-0" : "lg:pl-6 2xl:pl-14"}`}
       >
         <img class="mb-4" src={image} width={32} height={32} />
 
