@@ -1,0 +1,43 @@
+import { asset, Head } from "$fresh/runtime.ts";
+
+import BigText from "$store/components/ui/BigText.tsx";
+
+export interface Props {
+  /**
+   * @format html
+   */
+  title: string;
+  /**
+   * @format html
+   */
+  subTitle: string;
+  topics: {
+    text: string;
+  }[];
+}
+
+export default function Achievements({ title, subTitle, topics }: Props) {
+  return (
+    <div class="container px-3 pt-24">
+      <BigText title={title} />
+      <span
+        class="mt-4 mb-10 text-xl  leading-[2.5rem] md:mb-20 md:text-[2rem] md:leading-[1.8rem] text-center block w-[100%] lg:leading-[4rem]"
+        dangerouslySetInnerHTML={{ __html: subTitle }}
+      >
+      </span>
+
+      <div class="relative">
+        <div class="lg:absolute lg:left-0 lg:right-0 lg:mx-auto lg:max-w-max">
+          {topics.map((topic) => (
+            <div class="mb-6 mx-auto flex items-start gap-4">
+              <img src={asset("/image/check.png")} width={25} height={25} />
+              <p class="text-white text-xl leading-6 font-medium md:text-2xl md:leading-7 ">
+                {topic.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
