@@ -2,12 +2,22 @@ export interface Props {
   label: string;
   details?: string;
   href: string;
+  type?: "ligth" | "dark";
 }
 
-export default function Button({ label, details, href }: Props) {
+const THEME = {
+  "dark": "bg-primary text-base-200",
+  "ligth": "bg-[#113032] text-primary",
+};
+
+export default function Button(
+  { label, details, href, type = "ligth" }: Props,
+) {
   return (
     <a
-      class={` mt-auto bg-primary text-base-200 rounded-full font-medium text-xl px-6 py-4`}
+      class={` mt-auto rounded-full font-medium text-xl px-6 py-4 ${
+        THEME[type]
+      }`}
       href={href}
     >
       {label} <span class="text-sm">{details}</span>
