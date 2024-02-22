@@ -12,7 +12,17 @@ export default function BenefitCard(
 ) {
   return (
     <>
-      <div class={`py-6 lg:pl-6 2xl:pl-14 lg:py-0 md:w-[45%] ${position == 0 ? "pl-0 border-t-transparent" : ""} ${(position+1) == 1 || (position+1) == 2 ? 'md:border-t-0 md:border-t-transparent' : 'border-t-[#A1A1AA]'} lg:w-[100%] ${(position+1) % 2 == 0 ? 'md:flex md:justify-center lg:block' : ''}`}>
+      <div
+        class={`py-6 lg:pl-6 2xl:pl-14 lg:py-0 md:w-[45%] ${
+          position == 0 ? "pl-0 border-t-transparent" : ""
+        } ${
+          (position + 1) == 1 || (position + 1) == 2
+            ? "md:border-t-0 md:border-t-transparent"
+            : "border-t-[#A1A1AA]"
+        } lg:w-[100%] ${
+          (position + 1) % 2 == 0 ? "md:flex md:justify-center lg:block" : ""
+        }`}
+      >
         <div>
           <img class="mb-4" src={image} width={32} height={32} />
 
