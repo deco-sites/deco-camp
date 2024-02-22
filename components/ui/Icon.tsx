@@ -47,6 +47,7 @@ export type AvailableIcons =
   | "AlertWarning"
   | "AlertError"
   | "share"
+  | "check"
   | "Linkedin"
   | "Git-hub"
   | "Twitter"
