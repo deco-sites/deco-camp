@@ -42,18 +42,24 @@ export default function AccordionSyllabus({ props }: { props: Props }) {
   const totalTime = TotalTime();
 
   return (
-    <div className="collapse collapse-arrow border-b rounded-none border-neutral border-opacity-15 last:border-b-0">
-      <input type="radio" name="my-accordion-2" />
-      <div className="collapse-title pl-10 pr-3 md:py-7 md:pl-16 md:pr-8 font-medium text-neutral flex justify-start text-sm md:text-base lg:text-2xl">
-        <h4 class="">
+    <details className="border-b rounded-none border-neutral border-opacity-15 last:border-b-0">
+      <summary className="collapse-title flex flex-row px-4 md:py-7 md:px-8 font-medium text-neutral justify-start items-center text-sm md:text-base lg:text-2xl gap-3">
+        <Icon
+          class="text-white w-auto"
+          id="ChevronDown"
+          width={20}
+          height={20}
+          strokeWidth={"3"}
+        />
+        <h4 class=" w-auto">
           {title}
         </h4>
-        <span class="hidden md:block ml-auto">
+        <span class="hidden md:block ml-auto w-auto">
           {listContent.length + " " + " " + labelMobule + " • " + totalTime +
             " h"}
         </span>
-      </div>
-      <div className="collapse-content md:px-8">
+      </summary>
+      <div className=" md:px-8 bg-black p-4 md:py-6">
         <ul class="w-full flex flex-col gap-6 ">
           {listContent.map((item) => (
             <li class="flex flex-row gap-4 justify-start items-start">
@@ -89,6 +95,6 @@ export default function AccordionSyllabus({ props }: { props: Props }) {
           ))}
         </ul>
       </div>
-    </div>
+    </details>
   );
 }
