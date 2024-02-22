@@ -20,7 +20,9 @@ export default function BenefitCard(
             ? "md:border-t-0 md:border-t-transparent"
             : "border-t-[#A1A1AA]"
         } lg:w-[100%] ${
-          (position + 1) % 2 == 0 ? "md:flex md:justify-start md:pl-7 lg:block" : ""
+          (position + 1) % 2 == 0
+            ? "md:flex md:justify-start md:pl-7 lg:block"
+            : ""
         }`}
       >
         <div>
