@@ -13,7 +13,9 @@ export default function BenefitCard(
     <>
       <div
         class={`py-6 lg:py-0 md:w-[45%] ${
-          position == 0 ? "pl-0 border-t-transparent lg:border-l-transparent lg:pl-0 2xl:pl-0" : "lg:pl-6 2xl:pl-14"
+          position == 0
+            ? "pl-0 border-t-transparent lg:border-l-transparent lg:pl-0 2xl:pl-0"
+            : "lg:pl-6 2xl:pl-14"
         } ${
           (position + 1) == 1 || (position + 1) == 2
             ? "md:border-t-0 md:border-t-transparent"

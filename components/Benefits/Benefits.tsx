@@ -4,7 +4,7 @@ import BenefitCard from "./BenefitCard.tsx";
 
 /**
  * @titleBy title
-*/
+ */
 interface Item {
   icon: ImageWidget;
   title: string;
@@ -12,7 +12,7 @@ interface Item {
 }
 
 export interface Props {
-  items:Item[];
+  items: Item[];
 }
 
 const BASE_PROPS = {
