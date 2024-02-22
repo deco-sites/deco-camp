@@ -1,5 +1,4 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-
 export interface Props {
   image: ImageWidget;
   title: string;
@@ -13,8 +12,10 @@ export default function BenefitCard(
   return (
     <>
       <div
-        class={`py-6 lg:pl-6 2xl:pl-14 lg:py-0 md:w-[45%] ${
-          position == 0 ? "pl-0 border-t-transparent" : ""
+        class={`py-6 lg:py-0 md:w-[45%] ${
+          position == 0
+            ? "pl-0 border-t-transparent lg:border-l-transparent lg:pl-0 2xl:pl-0"
+            : "lg:pl-6 2xl:pl-14"
         } ${
           (position + 1) == 1 || (position + 1) == 2
             ? "md:border-t-0 md:border-t-transparent"

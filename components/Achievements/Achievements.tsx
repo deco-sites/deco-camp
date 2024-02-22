@@ -50,7 +50,7 @@ export default function Achievements({ props }: { props: Props }) {
   const { title, subTitle, topics } = { ...BASE_PROPS, ...props };
 
   return (
-    <div class="container px-3 pt-24">
+    <div class="container px-3 py-24">
       <BigText title={title} />
       <span
         class="mt-4 mb-10 text-xl  leading-[2.5rem] md:mb-20 md:text-[2rem] md:leading-[1.8rem] text-center block w-[100%] lg:leading-[4rem]"
