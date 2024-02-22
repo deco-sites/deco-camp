@@ -42,10 +42,10 @@ export default function AccordionSyllabus({ props }: { props: Props }) {
   const totalTime = TotalTime();
 
   return (
-    <details className="border-b rounded-none border-neutral border-opacity-15 last:border-b-0">
-      <summary className="collapse-title flex flex-row px-4 md:py-7 md:px-8 font-medium text-neutral justify-start items-center text-sm md:text-base lg:text-2xl gap-3">
+    <details className="border-b rounded-none border-neutral border-opacity-15 last:border-b-0 cursor-pointer">
+      <summary className="collapse-title flex flex-row px-4 md:py-7 md:px-8 font-medium text-neutral justify-start items-center text-sm md:text-base lg:text-2xl gap-3 xl:gap-4">
         <Icon
-          class="text-white w-auto"
+          class="text-white w-auto -ml-[3px]"
           id="ChevronDown"
           width={20}
           height={20}
@@ -59,7 +59,7 @@ export default function AccordionSyllabus({ props }: { props: Props }) {
             " h"}
         </span>
       </summary>
-      <div className=" md:px-8 bg-black p-4 md:py-6">
+      <div className=" md:px-8 bg-black p-4 md:py-6 cursor-default">
         <ul class="w-full flex flex-col gap-6 ">
           {listContent.map((item) => (
             <li class="flex flex-row gap-4 justify-start items-start">
