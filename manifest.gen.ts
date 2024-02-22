@@ -9,9 +9,10 @@ import * as $$$$$$2 from "./sections/Benefits/HowItWorks.tsx";
 import * as $$$$$$3 from "./sections/Gallery.tsx";
 import * as $$$$$$4 from "./sections/Hero/Hero.tsx";
 import * as $$$$$$5 from "./sections/Images/Carousel.tsx";
-import * as $$$$$$6 from "./sections/Problem/Problem.tsx";
-import * as $$$$$$7 from "./sections/Syllabus/Syllabus.tsx";
-import * as $$$$$$8 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$6 from "./sections/Mentors/Mentors.tsx";
+import * as $$$$$$7 from "./sections/Problem/Problem.tsx";
+import * as $$$$$$8 from "./sections/Syllabus/Syllabus.tsx";
+import * as $$$$$$9 from "./sections/Theme/Theme.tsx";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
@@ -26,9 +27,10 @@ const manifest = {
     "deco-sites/deco-camp/sections/Gallery.tsx": $$$$$$3,
     "deco-sites/deco-camp/sections/Hero/Hero.tsx": $$$$$$4,
     "deco-sites/deco-camp/sections/Images/Carousel.tsx": $$$$$$5,
-    "deco-sites/deco-camp/sections/Problem/Problem.tsx": $$$$$$6,
-    "deco-sites/deco-camp/sections/Syllabus/Syllabus.tsx": $$$$$$7,
-    "deco-sites/deco-camp/sections/Theme/Theme.tsx": $$$$$$8,
+    "deco-sites/deco-camp/sections/Mentors/Mentors.tsx": $$$$$$6,
+    "deco-sites/deco-camp/sections/Problem/Problem.tsx": $$$$$$7,
+    "deco-sites/deco-camp/sections/Syllabus/Syllabus.tsx": $$$$$$8,
+    "deco-sites/deco-camp/sections/Theme/Theme.tsx": $$$$$$9,
   },
   "apps": {
     "deco-sites/deco-camp/apps/decohub.ts": $$$$$$$$$$$0,
