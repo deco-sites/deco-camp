@@ -59,7 +59,7 @@ export default function AccordionSyllabus({ props }: { props: Props }) {
             " h"}
         </span>
       </summary>
-      <div className=" md:px-8 bg-black p-4 md:py-6 cursor-none">
+      <div className=" md:px-8 bg-black p-4 md:py-6 cursor-default">
         <ul class="w-full flex flex-col gap-6 ">
           {listContent.map((item) => (
             <li class="flex flex-row gap-4 justify-start items-start">
