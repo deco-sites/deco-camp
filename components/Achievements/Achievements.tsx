@@ -59,7 +59,7 @@ export default function Achievements({ props }: { props: Props }) {
       </span>
 
       <div class="relative">
-        <div class="lg:absolute lg:left-0 lg:right-0 lg:mx-auto lg:max-w-max">
+        <div class="lg:mx-auto lg:max-w-max">
           {topics.map((topic) => (
             <div class="mb-6 mx-auto flex items-start gap-4">
               <img src={asset("/image/check.png")} width={25} height={25} />
