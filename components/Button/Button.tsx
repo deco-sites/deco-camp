@@ -11,7 +11,7 @@ const THEME = {
 };
 
 export default function Button(
-  { label, details, href, type = "ligth" }: Props,
+  { label, details, href, type = "dark" }: Props,
 ) {
   return (
     <a
