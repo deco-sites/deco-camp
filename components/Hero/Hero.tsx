@@ -64,6 +64,7 @@ export default function Hero({ props }: { props: Props }) {
             label={button.label}
             href={button.href}
             details={button.details}
+            type={button.type}
           />
           <span class="lg:ml-4 text-neutral text-sm">{afterButtonText}</span>
         </div>

@@ -17,7 +17,7 @@ export default function Problem({ props }: { props: Props }) {
   const { title, subtitle, cardProblem } = props;
 
   return (
-    <div class="flex flex-col w-full gap-8 px-4 py-10 xl:py-20 justify-center container">
+    <div class="flex flex-col w-full gap-8 px-4 py-10 md:py-16 lg:py-20 xl:py-[6.5rem] justify-center container">
       <h2
         class="text-neutral text-3xl text-center md:text-4xl"
         dangerouslySetInnerHTML={{ __html: title }}
